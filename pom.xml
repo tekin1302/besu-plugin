@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>besu-plugin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.hyperledger.besu/plugin-api -->
+        <dependency>
+            <groupId>org.hyperledger.besu</groupId>
+            <artifactId>plugin-api</artifactId>
+            <version>21.7.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/plugin-api-21.7.4.jar</systemPath>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.auto.service/auto-service -->
+        <dependency>
+            <groupId>com.google.auto.service</groupId>
+            <artifactId>auto-service</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.tuweni/tuweni-bytes -->
+        <dependency>
+            <groupId>org.apache.tuweni</groupId>
+            <artifactId>tuweni-bytes</artifactId>
+            <version>2.0.0</version>
+            <type>pom</type>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.tuweni/tuweni-units -->
+        <dependency>
+            <groupId>org.apache.tuweni</groupId>
+            <artifactId>tuweni-units</artifactId>
+            <version>2.0.0</version>
+            <type>pom</type>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
