@@ -18,9 +18,9 @@
         <dependency>
             <groupId>org.hyperledger.besu</groupId>
             <artifactId>plugin-api</artifactId>
-            <version>21.7.4</version>
+            <version>21.1.2</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/plugin-api-21.7.4.jar</systemPath>
+            <systemPath>${project.basedir}/lib/plugin-api-21.1.2.jar</systemPath>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.auto.service/auto-service -->
@@ -53,6 +53,14 @@
             <type>pom</type>
             <scope>compile</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
+        <dependency>
+            <groupId>info.picocli</groupId>
+            <artifactId>picocli</artifactId>
+            <version>4.6.1</version>
+        </dependency>
+
     </dependencies>
 
 </project>
